@@ -162,7 +162,7 @@ def main():
             # gc.collect()
             # torch.cuda.empty_cache()
 
-    output_file_path = "../result/reranking_results.json"
+    output_file_path = "../result/reranking_results_test.json"
     save_results_to_json(all_results, output_file_path)
 
 if __name__ == "__main__":
