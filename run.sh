@@ -59,3 +59,8 @@ python -m run.test\
 
 python -m run.hybrid_test_queryex
 
+python -m run.LLM_rerank
+
+
+conda deactivate
+
