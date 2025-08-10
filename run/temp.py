@@ -17,7 +17,7 @@ for d, rerank in zip(data, reranking_data):
         text = r["text"]
         example = "\n".join(r["examples"])
         retrieval.append(text + "\n" + example)
-    d.update({'retrieval': rerank['reranking_result']['selected_texts']})
+    d.update({'retrieval': retrieval})
 
-with open(f'{split}_with_examples.json', 'w') as f:
+with open(f'../data/{split}_with_examples.json', 'w') as f:
     json.dump(data, f, indent=4, ensure_ascii=False)
